@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tyrrell County Website</title>
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="img/tyrrell-county-favicon.png">
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/d6e04426a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--ADOBE FONTS-->
+    <link rel="stylesheet" href="https://use.typekit.net/hgg6vzd.css">
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/customstyles.css">
+</head>
+<body>
+
+<!-- Nav -->
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-1-strong">
+        <div class="container-lg">
+            <a class="navbar-brand" href="index.html">
+                <img class="tyrrell-county-seal img-fluid d-lg-none" src="img/tyrrell-county-seal.png" alt="Tyrell County's Official seal which features a stag standing by a berry-bush and a body of water, over which a flock of geese is flying. The text around the image reads: Tyrrell County, North Carolina, 1729.">
+                <h1 class="tyrrell-county-header d-lg-none">Tyrrell County</h1>
+                <img class="img-fluid d-none d-lg-inline" src="img/tyrrell-county-logo.png" alt="Tyrell County's Official seal which features a stag standing by a berry-bush and a body of water, over which a flock of geese is flying. The text around the image reads: Tyrrell County, North Carolina, 1729.">
+                <h1 class="sr-only">Tyrrell County, North Carolina</h1>
+            </a>
+    
+            <button class="navbar-toggler my-3" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+            <div class="row">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="col-12 d-flex justify-content-lg-end">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                            <div class="dropdown">
+                                <a id="residentInfoDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <p class="nav-item dropdown d-inline">
+                                        Resident Information
+                                    </p>
+                                </a>
+                                    <ul class="dropdown-menu bg-secondary" aria-labelledby="residentInfoDropdown">
+                                      <li>
+                                        <a class="dropdown-item" href="public-safety.html">Public Safety</a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="property-information.html">Property Information</a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="upcoming-events.html">Upcoming Events</a>
+                                      </li>
+                                    </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <a id="depGovDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <p class="nav-item dropdown d-inline">
+                                        Government
+                                    </p>
+                                </a>
+                                    <ul class="dropdown-menu bg-secondary" aria-labelledby="depGovDropdown">
+                                      <li>
+                                        <a class="dropdown-item" href="boards.html">Boards</a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="departments.html">Departments</a>
+                                      </li>
+                                    </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <a id="careersDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <p class="nav-item dropdown d-inline">
+                                        Careers 
+                                    </p>
+                                </a>
+                                    <ul class="dropdown-menu bg-secondary" aria-labelledby="careersDropdown">
+                                      <li>
+                                        <a class="dropdown-item" href="careers.html">Job Listings</a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="current-employees.html">Current Employees</a>
+                                      </li>
+                                    </ul>
+                            </div>
+                        </div><!--Navbar Nav-->
+                    </div><!--COL-->
+                </div><!--Navbar Collapse-->
+    
+                <div class="col-12 d-flex justify-content-lg-end">
+                    <div class="d-flex flex-wrap flex-sm-nowrap">
+                        <button class="btn btn-light text-dark me-1 mb-1 w-25" type="button">
+                            Login
+                        </button>
+                        <button class="btn btn-light text-dark me-1 mb-1 w-25" type="button">
+                            Register
+                        </button>
+                        <form class="input-group mb-1 bg-light rounded-3">
+                            <input class="form-control w-lg-auto border-0" type="search" placeholder="Search" aria-label="Search" aria-describedby="headerSearch">
+                            <span id="headerSearch" class="input-group-text border-0 btn btn-light">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </form><!--Searchbar-->
+                    </div>
+                </div><!--COL-->
+
+                <div class="col-12 d-flex justify-content-lg-end">
+                    <div class="d-flex flex-wrap flex-sm-nowrap">
+                        <button class="btn btn-primary text-light" type="button">
+                            Pay Water/Sewer Bill
+                        </button>
+                    </div>
+                </div><!--COL-->
+            </div><!--ROW-->
+        </div><!--CONTAINER-->
+    </nav>
+</header>    
+
+<!--PAGE CONTENT-->
+<main>
+    <section class="homepage-hero-container container-flex bg-secondary shadow-1-strong">
+        <p class="sr-only">A large image of a calm river surrrounded by green trees and bushes.</p>
+        <div class="d-flex h-100 align-items-end">
+            <h2 class="tyrrell-county-header overlay display-4 text-light w-100 text-end mb-0 pe-3 py-1">Tyrrell County</h2>
+        </div>
+    </section><!--HERO CONTAINER-->
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col">   
+                <div class="row">
+                    <article class="border-bottom border-dark">
+                        <h2 class="display-4 text-primary">Welcome to Tyrrell County, NC</h2>
+                        <p class="h4 text-muted">Sprawled between the urban mainland and the popular stretch of North Carolina's Outer Banks</p>
+                    </article><!--HEADER-->
+
+                    <div class="d-flex justify-content-center">
+                        <iframe class="rounded-3 my-4 shadow-2-strong" width="560" height="315" src="https://www.youtube.com/embed/ryhJjMmjIJM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div> <!--VIDEO-->
+
+                    <article class="mt-3">
+                        <h2 class="h1">Our History</h2>
+                        <p>
+                            Tyrrell County is one of North Carolina’s oldest counties, founded in 1729 and named for Sir John Tyrrell, one of the Lord’s Proprietors of the Carolinas.
+                        </p>
+
+                        <p>
+                            Tyrrell County is a diverse economic and ecological destination located between the northeast North Carolina urban mainland and the Outer Banks. Founded in 1729 and named for one of the Lord Proprietors, Tyrrell County hosts a special and abundant environment where red wolves howl and black bear and bobcats roam. Bald eagles and peregrine falcon soar over alligator and rose- crested orchids and pitcher plants. 
+                        </p>
+                        
+                        <p>    
+                            Commerce is also at home in Tyrrell County where world class agri-business and fishing helps feed the world and provides seeds for others to chart their economic harvests. The county hosts a wealth of water and land based ecotourism venues and is embraced by the Scuppernong and Alligator Rivers and the Albemarle Sound. The county is poised for residential, recreational and commercial growth and is aggressively finalizing the infrastructure necessary for multi-faceted development enhancing an already unparalleled quality of life.
+                        </p>
+            
+                        <a class="btn btn-light text-dark mb-3" data-mdb-toggle="collapse" href="#ourHistory" role="button" aria-expanded="false" aria-controls="ourHistory">
+                            Read More
+                        </a>
+                        
+                        <div id="ourHistory" class="collapse mt-3">
+                            <p>
+                                Located in northeastern North Carolina, Tyrrell County is bordered on the north by the Albemarle Sound, on the south by Hyde County, on the east by the Alligator River and Dare County, and on the west by Washington County. It is located approximately 150 miles east of the Triangle Area (Raleigh/Durham/Chapel Hill) and 100 miles south of Tidewater Virginia (Norfolk/Chesapeake/Virginia Beach). The county has a total area of 600 square miles of which 390 square miles is comprised of land and 210 square miles of water.
+                            </p>
+
+                            <p>
+                                The county seat and only municipality is Columbia, located on the banks of the Scuppernong River. The county is divided into five townships – Alligator, Columbia, Gum Neck, Scuppernong, and South Fork.
+                            </p>
+                                
+                            <p>
+                                According to the 2010 United States’ census, the population of the county was 4,407, making it the least populous county in the state. Agri-business, commercial fishing, forestry, and tourism contribute to the economy. Access to water and the abundance of forest land and wildlife for recreational fishing and hunting are valuable assets of the county.
+                            </p>
+                                
+                            <p>
+                                The county has a five member Board of Commissioners/Manager type of government. The five members are elected at large by a limited voting election system and serve staggered four-year terms.
+                            </p>
+                        </div><!--OUR HISTORY COLLAPSE-->
+                    </article><!--OUR HISTORY-->
+                </div><!--NESTED ROW-->     
+            </div><!--COL-->
+
+            <div class="col-lg-4 d-flex justify-content-lg-center">
+                <article class="bg-secondary rounded-3 p-3 mb-3">
+                    <h2 id="contactSidebar" class="text-center">Contact Us</h2>
+                    <h5>Phone</h5>
+                    <i class="text-muted fa-solid fa-phone"></i>
+                    <a href="tel:+2527961371">(252) 796-1371</a>
+                    <h5 class="pt-3">Email</h5>
+                    <i class="text-muted fa-solid fa-at"></i>
+                    <a href="mailto:contact.us@tyrrell.county.org">contact.us@tyrrell.county.org</a>
+                    <h5 class="pt-3">Mailing Address</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="text-muted fa-regular fa-envelope"></i>Tyrrell County</li>
+                        <li>108 S. Water St.</li>
+                        <li> Columbia, NC 27925</li>
+                    </ul>
+                    
+                    <div class="border-top border-dark">
+                        <button class="btn btn-lg btn-primary border-0 text-light mt-3" type="button">
+                            Pay Water/Sewer Bill
+                        </button>
+                    </div>
+
+                    <div class="d-none d-lg-block border-top border-dark mt-3 pt-3">
+                        <img class="img-fluid" src="img/tyrrell-county-seal.png" alt="Tyrell County's Official seal which features a stag standing by a berry-bush and a body of water, over which a flock of geese is flying. The text around the image reads: Tyrrell County, North Carolina, 1729." >
+                        <p class="text-center mt-3 h4">Tyrrell County Seal</p>
+                    </div>
+                </article>
+            </div><!--COL CONTACT SIDEBAR-->
+        </div><!--ROW-->
+    </section><!--CONTAINER-->
+</main>
+
+<!--Footer-->
+<footer class="bg-dark text-light pb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 border-bottom border-light">
+                <form class="container text-center py-4" action="#">
+                    <h5 class="h3">Newsletter</h5>
+                    <p>Subscribe to stay informed on events, alerts, and more:</p>
+                    <input class="align-content-center" type="text" placeholder="jane.smith@gmail.com" name="mail" required>
+                    <input class="btn btn-primary text-light mt-1 rounded-3" type="submit" value="Subscribe">
+                </form>
+            </div><!--COL NEWSLETTER-->
+
+            <div class="col-md-6 my-4">
+                <section class="col text-center">
+                    <h5 class="h3 d-flex justify-content-center justify-content-md-start">Follow Us</h5>
+                    <div class="h1 d-flex justify-content-center justify-content-md-start">
+                        <a class="footer-social-icon" target="_blank" href="https://www.facebook.com/pages/Tyrrell-County-North-Carolina/143832808960132"><i class="pe-3 bi bi-facebook"></i><p class="visually-hidden">Facebook</p></a>
+                        <a class="footer-social-icon" target="_blank" href="https://twitter.com/TyrrellCounty"><i class="px-3 bi bi-twitter"></i><p class="visually-hidden">Twitter</p></a>
+                        <a class="footer-social-icon" target="_blank" href="https://www.youtube.com/watch?v=ryhJjMmjIJM"><i class="ps-3 bi bi-youtube"></i><p class="visually-hidden">Youtube</p></a>
+                    </div>
+                </section>
+            </div><!--COL SOCIAL MEDIA-->
+
+            <div class="col-md-6 my-4">
+                <h5 class="h3 d-flex justify-content-center justify-content-md-end">Quick Links</h5>
+                <ul class="list-unstyled d-flex justify-content-center justify-content-md-end">
+                    <li class="me-3 border-bottom border-warning"><a href="careers.html" class="text-warning">Careers</a></li>
+                    <li class="border-bottom border-warning me-3"><a href="index.html#contactSidebar" class="text-warning">Contact</a></li>
+                    <li class="border-bottom border-warning"><a href="site-map.html" class="text-warning">Site Map</a></li>
+                </ul>
+            </div><!--COL QUICK LINKS-->
+
+            <div class="col-md-12">
+                <p class="text-center"><a href="http://tyrrellcounty.org/en/" target="_blank">Tyrrell County Original Site</a></p>
+                <p class="text-center">&copy; 2022, Tyrell County, NC. All Rights Reserved</p>
+            </div><!--COL COPYRIGHT-->
+
+        </div><!--ROW-->
+    </div><!--CONTAINER-->
+</footer>
+
+<!-- MDB -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
